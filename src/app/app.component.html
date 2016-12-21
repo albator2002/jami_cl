@@ -1,5 +1,29 @@
-<h1>
-  {{title}}
-</h1>
-<a [routerLink]="['/Cart']">Proceed to checkout</a>
-<router-outlet></router-outlet>
+<md-sidenav-layout [class.m2app-dark]="isDarkTheme">
+
+  <md-sidenav #sidenav mode="side" class="app-sidenav">
+    Sidenav
+  </md-sidenav>
+
+  <md-toolbar color="primary">
+    <button class="app-icon-button" (click)="sidenav.toggle()">
+      <i class="material-icons app-toolbar-menu">menu</i>
+    </button>
+
+    <h1>
+      {{title}}
+    </h1>
+
+    <span class="app-toolbar-filler"></span>
+    <button md-button [routerLink]="['/Cart']"><i class="material-icons">shopping_cart</i></button>
+  </md-toolbar>
+
+  <div class="app-content">
+    <md-card>
+      <router-outlet></router-outlet>
+    </md-card>
+  </div>
+
+</md-sidenav-layout>
+<span class="app-action" [class.m2app-dark]="isDarkTheme">
+  <button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
+</span>

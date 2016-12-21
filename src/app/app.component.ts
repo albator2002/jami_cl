@@ -7,5 +7,6 @@ import {Router, RouterLink, RouterOutlet} from "@angular/router";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Jamila Fashion!';
+  isDarkTheme: boolean = false;
 }

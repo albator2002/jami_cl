@@ -18,13 +18,13 @@ import {CartService} from "./Services/cart.service";
     `],
     template: `
         <div class="row">
-            <div class="col-md-4"><img src={{item.image_src}}/></div>
+            <div class="col-md-4"><img src={{item.image_src}}/>  <button (click)="addToCart()"><i class="material-icons">add_shopping_cart</i></button></div>
             <div class="col-md-4"><b (click)="ViewDetails()">{{item.name}} by {{item.manufacturer}}</b><br/>
                 {{item.description}}
             </div>
             <div class="col-md-4">
-                {{item.price}}$ <br/>
-                <button (click)="addToCart()">Add To Cart</button>
+                {{item.price}}$ 
+               
             </div>
         </div>
     `

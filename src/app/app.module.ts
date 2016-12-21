@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { routing,appRoutingProviders }  from './app.routing';
-
+import {MaterialModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import {Catalog} from "./catalog.component";
 import {Details} from "./details.component";
@@ -25,6 +25,7 @@ import {CatalogService} from "./Services/shopping.service";
     BrowserModule,
     FormsModule,
     HttpModule,
+    MaterialModule.forRoot(),
     RouterModule,
     routing
   ],

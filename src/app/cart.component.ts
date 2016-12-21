@@ -20,12 +20,7 @@ import {ICheckoutType} from "./Services/checkout.service";
                     <item-preview [item]="item"></item-preview>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <input type="text" #input/>
-                    <button (click)="setDiscount(input.value)">Apply discount</button>
-                </div>
-            </div>
+           
             <div class="container">
                 <div class="row">
                     Total pay: {{cartService.getTotalPrice()}}
