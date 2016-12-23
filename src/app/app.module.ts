@@ -10,6 +10,7 @@ import {Catalog} from "./catalog.component";
 import {Details} from "./details.component";
 import {Cart} from "./cart.component";
 import {ItemPreview} from "./item-preview.component";
+import {CartItem} from "./cart-item.component";
 import {CartService} from "./Services/cart.service";
 import {CatalogService} from "./Services/shopping.service";
 
@@ -19,6 +20,7 @@ import {CatalogService} from "./Services/shopping.service";
     Catalog,
     Details,
     Cart,
+    CartItem,
     ItemPreview
   ],
   imports: [
