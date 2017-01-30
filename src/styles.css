@@ -10,10 +10,11 @@
   display:table-row;
   width:auto;
   clear:both;
+
 }
 .div-table-col{
   float:left;/*fix for  buggy browsers*/
   display:table-column;
   width:150px;
-  background-color:#ccc;
+  vertical-align: top;
 }

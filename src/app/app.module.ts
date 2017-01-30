@@ -13,6 +13,7 @@ import {ItemPreview} from "./item-preview.component";
 import {CartItem} from "./cart-item.component";
 import {CartService} from "./Services/cart.service";
 import {CatalogService} from "./Services/shopping.service";
+import {Visa, MasterCard, PayPalCheckout} from './Utils/payment-methods';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import {CatalogService} from "./Services/shopping.service";
     RouterModule,
     routing
   ],
-  providers: [appRoutingProviders, CartService, CatalogService],
+  providers: [appRoutingProviders, CartService, CatalogService,PayPalCheckout],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

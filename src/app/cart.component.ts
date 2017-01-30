@@ -68,7 +68,7 @@ export class Cart {
         this.cartItems = cartService.getCart();
     }
     setPaymentType(type:string){
-        this.defaultCheckout.checkOutType = paymentMethods.filter(paymentMethod=>paymentMethod.name.toLowerCase()===type.toLowerCase())[0];
+        this.defaultCheckout.checkOutType =  type;   //paymentMethods.filter(paymentMethod=>paymentMethod.name.toLowerCase()===type.toLowerCase())[0];
     }
     setDiscount(name:string){
         this.cartService.applyDiscount(name);
